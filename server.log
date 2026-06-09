@@ -1,0 +1,19 @@
+127.0.0.1 - - [22/May/2026 15:14:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2026 15:14:18] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2026 15:14:19] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2026 15:14:20] code 404, message File not found
+127.0.0.1 - - [22/May/2026 15:14:20] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [22/May/2026 15:15:24] code 404, message File not found
+127.0.0.1 - - [22/May/2026 15:15:24] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - [22/May/2026 15:15:24] code 404, message File not found
+127.0.0.1 - - [22/May/2026 15:15:24] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [22/May/2026 15:15:24] code 404, message File not found
+127.0.0.1 - - [22/May/2026 15:15:24] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+127.0.0.1 - - [22/May/2026 15:27:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2026 15:27:50] "GET /js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/May/2026 15:27:50] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2026 15:36:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2026 15:36:32] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2026 15:36:32] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/May/2026 15:36:35] code 404, message File not found
+127.0.0.1 - - [22/May/2026 15:36:35] "GET /favicon.ico HTTP/1.1" 404 -

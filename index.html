@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>森朵启蒙 - Blooming Forest Studio</title>
+    <meta name="description" content="森朵启蒙英语 - 专注5-12岁儿童英语启蒙，提供线上外教课、阅读小组、一对一学习方案咨询与陪跑服务。">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 页面容器 -->
+    <div id="app">
+        <!-- 页面内容区 -->
+        <main class="page-container">
+            <!-- ========== 首页 ========== -->
+            <section id="page-home" class="page active">
+                <!-- Hero区 -->
+                <div class="hero">
+                    <div class="hero-bg">
+                        <div class="tree tree-1"></div>
+                        <div class="tree tree-2"></div>
+                        <div class="tree tree-3"></div>
+                        <div class="tree tree-4"></div>
+                        <div class="tree tree-5"></div>
+                        <div class="cloud cloud-1"></div>
+                        <div class="cloud cloud-2"></div>
+                        <div class="cloud cloud-3"></div>
+                    </div>
+                    <div class="hero-content">
+                        <div class="logo-area">
+                            <!-- 手绘森林logo -->
+                            <svg class="logo-svg" viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                                <!-- 背景装饰：小山坡 -->
+                                <ellipse cx="110" cy="130" rx="110" ry="25" fill="#c8e6c9" opacity="0.4"/>
+
+                                <!-- 树1 左侧小树 -->
+                                <g class="tree-svg" style="--tx:-2px;--ty:1px">
+                                    <ellipse cx="38" cy="72" rx="16" ry="24" fill="#81c784" opacity="0.85"/>
+                                    <ellipse cx="35" cy="68" rx="10" ry="16" fill="#a5d6a7" opacity="0.6"/>
+                                    <line x1="38" y1="92" x2="38" y2="112" stroke="#8d6e3f" stroke-width="3" stroke-linecap="round"/>
+                                </g>
+
+                                <!-- 树2 中央大树 -->
+                                <g class="tree-svg" style="--tx:1px;--ty:-1px">
+                                    <!-- 树冠多层 -->
+                                    <ellipse cx="105" cy="55" rx="36" ry="40" fill="#66bb6a" opacity="0.9"/>
+                                    <ellipse cx="95" cy="50" rx="22" ry="28" fill="#81c784" opacity="0.7"/>
+                                    <ellipse cx="115" cy="58" rx="18" ry="22" fill="#81c784" opacity="0.6"/>
+                                    <ellipse cx="105" cy="48" rx="14" ry="18" fill="#a5d6a7" opacity="0.5"/>
+                                    <!-- 树干 -->
+                                    <path d="M100 88 Q105 98 98 115 Q105 115 112 88 Z" fill="#9e7b4f"/>
+                                    <!-- 树顶小装饰 -->
+                                    <circle cx="98" cy="38" r="2.5" fill="#ffd966" opacity="0.8"/>
+                                    <circle cx="112" cy="45" r="2" fill="#ffd966" opacity="0.7"/>
+                                    <circle cx="105" cy="35" r="1.8" fill="#ffd966" opacity="0.6"/>
+                                </g>
+
+                                <!-- 树3 右侧中树 -->
+                                <g class="tree-svg" style="--tx:-1px;--ty:1.5px">
+                                    <polygon points="162,88 140,35 184,35" fill="#5aaf60" opacity="0.9"/>
+                                    <polygon points="162,78 145,42 179,42" fill="#6dbf70" opacity="0.7"/>
+                                    <polygon points="162,68 151,48 173,48" fill="#81c784" opacity="0.5"/>
+                                    <line x1="162" y1="88" x2="162" y2="112" stroke="#8d6e3f" stroke-width="3.5" stroke-linecap="round"/>
+                                </g>
+
+                                <!-- 树4 右侧小树 -->
+                                <g class="tree-svg" style="--tx:1.5px;--ty:-0.5px">
+                                    <ellipse cx="188" cy="78" rx="14" ry="20" fill="#81c784" opacity="0.8"/>
+                                    <ellipse cx="192" cy="74" rx="8" ry="13" fill="#a5d6a7" opacity="0.5"/>
+                                    <line x1="188" y1="94" x2="188" y2="112" stroke="#8d6e3f" stroke-width="2.5" stroke-linecap="round"/>
+                                </g>
+
+                                <!-- 地面 -->
+                                <path d="M15 112 Q60 108 110 112 Q160 116 205 111" stroke="#9e7b4f" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+                                <!-- 小草 -->
+                                <path d="M55 112 Q53 105 50 100" stroke="#66bb6a" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.7"/>
+                                <path d="M58 112 Q61 104 63 99" stroke="#66bb6a" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M165 112 Q163 106 161 101" stroke="#66bb6a" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+                                <path d="M170 112 Q173 105 175 100" stroke="#66bb6a" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+                                <!-- 小太阳装饰 -->
+                                <circle cx="195" cy="25" r="10" fill="#ffd966" opacity="0.3"/>
+                                <circle cx="195" cy="25" r="6" fill="#ffd966" opacity="0.5"/>
+                                <line x1="195" y1="8" x2="195" y2="13" stroke="#ffd966" stroke-width="1.5" opacity="0.4"/>
+                                <line x1="195" y1="37" x2="195" y2="42" stroke="#ffd966" stroke-width="1.5" opacity="0.4"/>
+                                <line x1="178" y1="25" x2="183" y2="25" stroke="#ffd966" stroke-width="1.5" opacity="0.4"/>
+                                <line x1="207" y1="25" x2="212" y2="25" stroke="#ffd966" stroke-width="1.5" opacity="0.4"/>
+                            </svg>
+                            <h1 class="brand-name">森朵启蒙</h1>
+                            <p class="brand-en">Blooming Forest Studio</p>
+                        </div>
+                        <p class="hero-slogan">在森林中自然生长<br>让英语学习像呼吸一样自然</p>
+                        <div class="hero-tags">
+                            <span class="tag">5-12岁英语启蒙</span>
+                            <span class="tag">纯正外教</span>
+                            <span class="tag">个性化方案</span>
+                        </div>
+                        <button class="btn btn-primary btn-hero" onclick="navigateTo('booking')">
+                            <span class="btn-icon">🎁</span> 免费领取试听课
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 三大业务卡片 -->
+                <div class="section services-section">
+                    <h2 class="section-title">
+                        <span class="title-icon">🌿</span> 我们的服务
+                    </h2>
+                    <div class="service-cards">
+                        <div class="service-card" onclick="showServiceDetail('reading')">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 64 64" width="48" height="48">
+                                    <rect x="16" y="12" width="32" height="40" rx="3" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+                                    <line x1="24" y1="22" x2="40" y2="22" stroke="#81c784" stroke-width="2"/>
+                                    <line x1="24" y1="30" x2="38" y2="30" stroke="#81c784" stroke-width="2"/>
+                                    <line x1="24" y1="38" x2="36" y2="38" stroke="#81c784" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3>阅读小组</h3>
+                            <p>精品小班分级阅读，在故事中浸泡英语，培养阅读习惯</p>
+                            <span class="card-arrow">了解更多 →</span>
+                        </div>
+                        <div class="service-card" onclick="showServiceDetail('foreign')">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 64 64" width="48" height="48">
+                                    <circle cx="32" cy="20" r="12" fill="#ffd93d" opacity="0.3"/>
+                                    <circle cx="32" cy="18" r="8" fill="#ffd93d" opacity="0.5"/>
+                                    <text x="32" y="23" text-anchor="middle" font-size="14" fill="#d4a017">🌍</text>
+                                </svg>
+                            </div>
+                            <h3>线上外教课</h3>
+                            <p>纯正母语外教一对一，趣味互动课堂，激发孩子英语兴趣</p>
+                            <span class="card-arrow">了解更多 →</span>
+                        </div>
+                        <div class="service-card" onclick="showServiceDetail('consult')">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 64 64" width="48" height="48">
+                                    <circle cx="32" cy="28" r="16" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+                                    <circle cx="32" cy="24" r="6" fill="#ff9800" opacity="0.3"/>
+                                    <path d="M32 30 L32 36" stroke="#ff9800" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="32" cy="39" r="2" fill="#ff9800"/>
+                                </svg>
+                            </div>
+                            <h3>一对一方案咨询</h3>
+                            <p>量身定制学习规划，全程陪跑指导，助力孩子稳步成长</p>
+                            <span class="card-arrow">了解更多 →</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 为什么选择我们 -->
+                <div class="section why-section">
+                    <h2 class="section-title">
+                        <span class="title-icon">⭐</span> 为什么选择森朵启蒙
+                    </h2>
+                    <div class="why-grid">
+                        <div class="why-item">
+                            <div class="why-icon">🎯</div>
+                            <h4>精准匹配</h4>
+                            <p>根据孩子年龄、水平和兴趣，匹配最适合的课程内容</p>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon">🌱</div>
+                            <h4>循序渐进</h4>
+                            <p>科学分级体系，从启蒙到进阶，每一步都扎实稳健</p>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon">❤️</div>
+                            <h4>用心陪伴</h4>
+                            <p>不是冷冰冰的课程，而是有温度的成长陪伴</p>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon">📊</div>
+                            <h4>效果可见</h4>
+                            <p>定期学习报告，孩子的每一点进步都清晰可见</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA区 -->
+                <div class="section cta-section">
+                    <div class="cta-card">
+                        <h3>🎁 免费领取试听课</h3>
+                        <p>填写信息，即可获得一节免费外教体验课</p>
+                        <button class="btn btn-primary" onclick="navigateTo('booking')">立即预约</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== 课程详情页 ========== -->
+            <section id="page-courses" class="page">
+                <div class="page-header">
+                    <h1>课程服务</h1>
+                    <p>为5-12岁孩子量身打造的英语学习方案</p>
+                </div>
+
+                <!-- 阅读小组 -->
+                <div class="course-detail" id="course-reading">
+                    <div class="course-header">
+                        <div class="course-badge">推荐</div>
+                        <h2>📚 阅读小组</h2>
+                        <p class="course-subtitle">精品小班 · 分级阅读 · 培养阅读习惯</p>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-feature-list">
+                            <div class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <div>
+                                    <strong>精品小班制</strong>
+                                    <p>每班3-6人，保证每个孩子都有充分表达机会</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <div>
+                                    <strong>科学分级体系</strong>
+                                    <p>根据孩子的阅读水平和兴趣，匹配最适合的绘本和章节书</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <div>
+                                    <strong>沉浸式阅读</strong>
+                                    <p>每周固定阅读时间，在故事中自然习得语言</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <div>
+                                    <strong>阅读+表达</strong>
+                                    <p>不只是读，更注重读后讨论和表达输出，提升综合能力</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-suitable">
+                            <h4>👶 适合学员</h4>
+                            <p>6-12岁，有一定英语基础，希望培养阅读习惯和提升阅读理解能力的孩子</p>
+                        </div>
+                        <div class="course-price">
+                            <h4>💰 课包选择</h4>
+                            <div class="price-cards">
+                                <div class="price-card">
+                                    <div class="price-name">月卡</div>
+                                    <div class="price-num">¥<span>580</span></div>
+                                    <div class="price-detail">4次课 · 60分钟/次</div>
+                                    <button class="btn btn-small" onclick="selectCourse('月卡-阅读小组')">选择</button>
+                                </div>
+                                <div class="price-card recommended">
+                                    <div class="price-badge">推荐</div>
+                                    <div class="price-name">季卡</div>
+                                    <div class="price-num">¥<span>1,580</span></div>
+                                    <div class="price-detail">12次课 · 60分钟/次</div>
+                                    <button class="btn btn-small" onclick="selectCourse('季卡-阅读小组')">选择</button>
+                                </div>
+                                <div class="price-card">
+                                    <div class="price-name">年卡</div>
+                                    <div class="price-num">¥<span>5,800</span></div>
+                                    <div class="price-detail">48次课 · 60分钟/次</div>
+                                    <button class="btn btn-small" onclick="selectCourse('年卡-阅读小组')">选择</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 线上外教课 -->
+                <div class="course-detail" id="course-foreign">
+                    <div class="course-header">
+                        <div class="course-badge">热门</div>
+                        <h2>🌍 线上外教课</h2>
+                        <p class="course-subtitle">纯正母语外教 · 一对一直播互动</p>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-feature-list">
+                            <div class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <div>
+                                    <strong>纯正母语外教</strong>
+                                    <p>来自英美澳加等英语母语国家，持有TESOL/TEFL国际教学资质</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <div>
+                                    <strong>一对一专属课堂</strong>
+                                    <p>25分钟/节，全程关注一个孩子，充分互动，高效学习</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <div>
+                                    <strong>趣味互动教学</strong>
+                                    <p>游戏化课件、动画故事、角色扮演，让孩子在玩中学</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <div>
+                                    <strong>灵活约课</strong>
+                                    <p>时间自由安排，早7点至晚10点，随时预约上课</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-suitable">
+                            <h4>👶 适合学员</h4>
+                            <p>5-12岁，零基础至中级水平，希望系统提升英语口语和听力能力的孩子</p>
+                        </div>
+                        <div class="course-price">
+                            <h4>💰 课包选择</h4>
+                            <div class="price-cards">
+                                <div class="price-card">
+                                    <div class="price-name">体验包</div>
+                                    <div class="price-num">¥<span>99</span></div>
+                                    <div class="price-detail">3节课 · 约25分钟/节</div>
+                                    <button class="btn btn-small" onclick="selectCourse('体验包-外教课')">选择</button>
+                                </div>
+                                <div class="price-card recommended">
+                                    <div class="price-badge">最受欢迎</div>
+                                    <div class="price-name">季度包</div>
+                                    <div class="price-num">¥<span>2,680</span></div>
+                                    <div class="price-detail">36节课 · 约25分钟/节</div>
+                                    <button class="btn btn-small" onclick="selectCourse('季度包-外教课')">选择</button>
+                                </div>
+                                <div class="price-card">
+                                    <div class="price-name">年度包</div>
+                                    <div class="price-num">¥<span>9,800</span></div>
+                                    <div class="price-detail">144节课 · 约25分钟/节</div>
+                                    <button class="btn btn-small" onclick="selectCourse('年度包-外教课')">选择</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 一对一整体方案咨询 -->
+                <div class="course-detail" id="course-consult">
+                    <div class="course-header">
+                        <h2>🎯 一对一整体方案咨询</h2>
+                        <p class="course-subtitle">量身定制 · 全程陪跑 · 效果保障</p>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-feature-list">
+                            <div class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <div>
+                                    <strong>全面评估诊断</strong>
+                                    <p>通过专业测评了解孩子当前水平、学习习惯和兴趣偏好</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <div>
+                                    <strong>定制学习方案</strong>
+                                    <p>根据评估结果，制定包含课程安排、阅读计划、家庭辅助的完整方案</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <div>
+                                    <strong>全程陪跑指导</strong>
+                                    <p>定期跟进学习进度，及时调整方案，解答家长的每一个疑问</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-check">✓</span>
+                                <div>
+                                    <strong>资源整合推荐</strong>
+                                    <p>根据方案推荐最适合的学习资源、APP、绘本和音频材料</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-suitable">
+                            <h4>👶 适合学员</h4>
+                            <p>希望系统规划孩子英语学习路线、需要专业指导和建议的家长</p>
+                        </div>
+                        <div class="course-price">
+                            <h4>💰 服务套餐</h4>
+                            <div class="price-cards">
+                                <div class="price-card">
+                                    <div class="price-name">单次咨询</div>
+                                    <div class="price-num">¥<span>299</span></div>
+                                    <div class="price-detail">60分钟深度咨询 + 书面方案</div>
+                                    <button class="btn btn-small" onclick="selectCourse('单次咨询-方案')">选择</button>
+                                </div>
+                                <div class="price-card recommended">
+                                    <div class="price-badge">推荐</div>
+                                    <div class="price-name">季度陪跑</div>
+                                    <div class="price-num">¥<span>1,980</span></div>
+                                    <div class="price-detail">3个月全程跟进 + 4次深度咨询</div>
+                                    <button class="btn btn-small" onclick="selectCourse('季度陪跑-方案')">选择</button>
+                                </div>
+                                <div class="price-card">
+                                    <div class="price-name">年度陪跑</div>
+                                    <div class="price-num">¥<span>6,800</span></div>
+                                    <div class="price-detail">12个月全程跟进 + 12次深度咨询</div>
+                                    <button class="btn btn-small" onclick="selectCourse('年度陪跑-方案')">选择</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 底部咨询入口 -->
+                <div class="course-cta">
+                    <p>不确定选哪个？可以先预约免费咨询</p>
+                    <button class="btn btn-primary" onclick="navigateTo('booking')">预约免费咨询</button>
+                </div>
+            </section>
+
+            <!-- ========== 预约试听页 ========== -->
+            <section id="page-booking" class="page">
+                <div class="page-header">
+                    <h1>🎁 预约试听</h1>
+                    <p>填写信息，即可免费领取一节试听课</p>
+                </div>
+
+                <div class="booking-form-container">
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-group">
+                            <label>家长姓名 <span class="required">*</span></label>
+                            <input type="text" name="parentName" placeholder="请输入您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <label>孩子姓名</label>
+                            <input type="text" name="childName" placeholder="请输入孩子的姓名（选填）">
+                        </div>
+                        <div class="form-group">
+                            <label>孩子年龄 <span class="required">*</span></label>
+                            <div class="age-selector">
+                                <label class="age-option">
+                                    <input type="radio" name="childAge" value="5-6" required>
+                                    <span>5-6岁</span>
+                                </label>
+                                <label class="age-option">
+                                    <input type="radio" name="childAge" value="7-8">
+                                    <span>7-8岁</span>
+                                </label>
+                                <label class="age-option">
+                                    <input type="radio" name="childAge" value="9-10">
+                                    <span>9-10岁</span>
+                                </label>
+                                <label class="age-option">
+                                    <input type="radio" name="childAge" value="11-12">
+                                    <span>11-12岁</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>联系电话 <span class="required">*</span></label>
+                            <input type="tel" name="phone" placeholder="请输入手机号" pattern="1[3-9]\d{9}" required>
+                        </div>
+                        <div class="form-group">
+                            <label>意向课程 <span class="required">*</span></label>
+                            <div class="course-selector">
+                                <label class="course-option">
+                                    <input type="radio" name="intention" value="线上外教课" required>
+                                    <span>🌍 线上外教课</span>
+                                </label>
+                                <label class="course-option">
+                                    <input type="radio" name="intention" value="阅读小组">
+                                    <span>📚 阅读小组</span>
+                                </label>
+                                <label class="course-option">
+                                    <input type="radio" name="intention" value="一对一方案咨询">
+                                    <span>🎯 一对一方案咨询</span>
+                                </label>
+                                <label class="course-option">
+                                    <input type="radio" name="intention" value="不确定，想先了解">
+                                    <span>🤔 不确定，想先了解</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>孩子目前英语水平</label>
+                            <select name="level">
+                                <option value="">请选择</option>
+                                <option value="零基础">零基础，还没开始学</option>
+                                <option value="启蒙阶段">启蒙阶段，会一些简单单词</option>
+                                <option value="初级">初级，能简单对话</option>
+                                <option value="中级">中级，能阅读简单故事</option>
+                                <option value="不确定">不确定</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>备注信息</label>
+                            <textarea name="remark" rows="3" placeholder="有什么特别想了解的？或者孩子的情况？"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-icon">📩</span> 提交预约
+                        </button>
+                        <p class="form-tips">提交后，老师会在24小时内与您联系安排试听课</p>
+                    </form>
+                </div>
+
+                <!-- 联系信息卡片 -->
+                <div class="contact-card">
+                    <h3>💬 也可以直接联系</h3>
+                    <div class="contact-item" onclick="copyContact('微信')">
+                        <span class="contact-icon">💬</span>
+                        <div>
+                            <strong>微信咨询</strong>
+                            <p>点击复制微信号，添加老师微信</p>
+                        </div>
+                        <span class="contact-action">复制</span>
+                    </div>
+                    <div class="contact-item" onclick="copyContact('电话')">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <strong>电话咨询</strong>
+                            <p>工作时间 9:00-21:00</p>
+                        </div>
+                        <span class="contact-action">拨打</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== 关于我页 ========== -->
+            <section id="page-about" class="page">
+                <div class="page-header about-header">
+                    <div class="about-avatar">
+                        <!-- 关于页森林logo -->
+                        <svg viewBox="0 0 220 140" width="140" height="90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                            <!-- 小山坡背景 -->
+                            <ellipse cx="110" cy="130" rx="110" ry="25" fill="#c8e6c9" opacity="0.5"/>
+                            <!-- 树1 左侧 -->
+                            <g>
+                                <ellipse cx="45" cy="78" rx="18" ry="26" fill="#81c784" opacity="0.9"/>
+                                <ellipse cx="42" cy="74" rx="11" ry="17" fill="#a5d6a7" opacity="0.6"/>
+                                <line x1="45" y1="98" x2="45" y2="118" stroke="#9e7b4f" stroke-width="3.5" stroke-linecap="round"/>
+                            </g>
+                            <!-- 树2 中央大 -->
+                            <g>
+                                <ellipse cx="108" cy="60" rx="34" ry="38" fill="#66bb6a" opacity="0.9"/>
+                                <ellipse cx="98" cy="55" rx="20" ry="26" fill="#81c784" opacity="0.7"/>
+                                <ellipse cx="118" cy="63" rx="16" ry="20" fill="#81c784" opacity="0.6"/>
+                                <ellipse cx="108" cy="52" rx="12" ry="16" fill="#a5d6a7" opacity="0.5"/>
+                                <path d="M103 92 Q108 102 103 118 Q108 118 113 92 Z" fill="#9e7b4f"/>
+                                <circle cx="100" cy="44" r="2.5" fill="#ffd966" opacity="0.8"/>
+                                <circle cx="112" cy="50" r="2" fill="#ffd966" opacity="0.7"/>
+                            </g>
+                            <!-- 树3 右侧 -->
+                            <g>
+                                <polygon points="162,90 142,42 182,42" fill="#5aaf60" opacity="0.9"/>
+                                <polygon points="162,80 146,48 178,48" fill="#6dbf70" opacity="0.7"/>
+                                <line x1="162" y1="90" x2="162" y2="118" stroke="#9e7b4f" stroke-width="3.5" stroke-linecap="round"/>
+                            </g>
+                            <!-- 地面 -->
+                            <path d="M15 118 Q70 114 110 118 Q155 122 205 117" stroke="#9e7b4f" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+                            <!-- 小草 -->
+                            <path d="M65 118 Q63 110 60 105" stroke="#66bb6a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+                            <path d="M68 118 Q71 109 73 104" stroke="#66bb6a" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                            <!-- 小太阳 -->
+                            <circle cx="195" cy="28" r="9" fill="#ffd966" opacity="0.35"/>
+                            <circle cx="195" cy="28" r="5" fill="#ffd966" opacity="0.55"/>
+                        </svg>
+                    </div>
+                    <h1>关于森朵启蒙</h1>
+                    <p class="about-subtitle">让每一位孩子都能在英语学习中<br>找到乐趣与自信</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-section">
+                        <h3>🌱 品牌理念</h3>
+                        <p>在森朵启蒙，我们尊重每个孩子的节奏，用温暖和专业陪伴他们成长，让英语成为孩子探索世界的工具，而不是负担。</p>
+                        <p>每个孩子都是一颗独特的种子。</p>
+                        <p>有的会长成一片森林——宽广、深沉、充满力量；有的会开出一朵小花——轻盈、柔软、自有光芒。</p>
+                        <p>不催促、不比较，只是陪孩子在自然的节奏里，慢慢长成自己的样子。</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h3>👩‍🏫 教学特色</h3>
+                        <div class="feature-grid">
+                            <div class="about-feature">
+                                <div class="af-icon">🎨</div>
+                                <h4>趣味驱动</h4>
+                                <p>用孩子感兴趣的内容切入，让学习变成一件期待的事</p>
+                            </div>
+                            <div class="about-feature">
+                                <div class="af-icon">🌳</div>
+                                <h4>自然习得</h4>
+                                <p>大量可理解性输入，在真实语境中自然掌握语言</p>
+                            </div>
+                            <div class="about-feature">
+                                <div class="af-icon">💚</div>
+                                <h4>正向激励</h4>
+                                <p>关注孩子的每一点进步，用鼓励建立学习信心</p>
+                            </div>
+                            <div class="about-feature">
+                                <div class="af-icon">🔗</div>
+                                <h4>家校联动</h4>
+                                <p>提供家庭辅助建议，让英语学习延伸到课堂之外</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-section">
+                        <h3>📋 服务流程</h3>
+                        <div class="process-timeline">
+                            <div class="process-step">
+                                <div class="step-num">1</div>
+                                <div class="step-content">
+                                    <h4>免费咨询</h4>
+                                    <p>了解孩子情况和家长需求</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-num">2</div>
+                                <div class="step-content">
+                                    <h4>水平测评</h4>
+                                    <p>精准定位孩子当前水平</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-num">3</div>
+                                <div class="step-content">
+                                    <h4>定制方案</h4>
+                                    <p>量身打造学习计划</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-num">4</div>
+                                <div class="step-content">
+                                    <h4>开始学习</h4>
+                                    <p>在陪伴中稳步成长</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-section">
+                        <h3>💬 家长反馈</h3>
+                        <div class="testimonials">
+                            <div class="testimonial">
+                                <div class="testimonial-text">"孩子以前很排斥英语课，上了森朵的外教课后竟然主动要求上课，说'老师好有趣'！"</div>
+                                <div class="testimonial-author">— 乐乐妈妈，孩子7岁</div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="testimonial-text">"阅读小组的设计太棒了，孩子现在每天都主动拿英文绘本看，阅读习惯培养起来了。"</div>
+                                <div class="testimonial-author">— 果果爸爸，孩子9岁</div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="testimonial-text">"一对一方案帮我理清了孩子学习的方向，不再盲目报班，少走了很多弯路。"</div>
+                                <div class="testimonial-author">— 小雨妈妈，孩子6岁</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== 成功提示页 ========== -->
+            <section id="page-success" class="page">
+                <div class="success-container">
+                    <div class="success-icon">🎉</div>
+                    <h2>预约成功！</h2>
+                    <p>感谢您预约森朵启蒙试听课</p>
+                    <div class="success-info">
+                        <p>老师会在 <strong>24小时内</strong> 通过电话或微信与您联系</p>
+                        <p>安排具体的试听时间</p>
+                    </div>
+                    <div class="success-tips">
+                        <h4>💡 温馨提示</h4>
+                        <ul>
+                            <li>试听课前请确保网络通畅</li>
+                            <li>建议提前5分钟进入课堂</li>
+                            <li>准备好耳机或音箱</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary" onclick="navigateTo('home')">返回首页</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- 底部导航栏 -->
+        <nav class="bottom-nav">
+            <a href="#home" class="nav-item active" data-page="home">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-label">首页</span>
+            </a>
+            <a href="#courses" class="nav-item" data-page="courses">
+                <span class="nav-icon">📚</span>
+                <span class="nav-label">课程</span>
+            </a>
+            <a href="#booking" class="nav-item" data-page="booking">
+                <span class="nav-icon">🎁</span>
+                <span class="nav-label">预约</span>
+            </a>
+            <a href="#about" class="nav-item" data-page="about">
+                <span class="nav-icon">💚</span>
+                <span class="nav-label">关于</span>
+            </a>
+        </nav>
+
+        <!-- 悬浮咨询按钮 -->
+        <div class="float-btn" onclick="showContactModal()">
+            <span>💬</span>
+        </div>
+
+        <!-- 联系弹窗 -->
+        <div id="contactModal" class="modal">
+            <div class="modal-overlay" onclick="closeContactModal()"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>💬 联系我</h3>
+                    <button class="modal-close" onclick="closeContactModal()">✕</button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-way" onclick="copyContact('微信')">
+                        <span class="cw-icon">💬</span>
+                        <div class="cw-info">
+                            <strong>微信号</strong>
+                            <p class="cw-value" id="wechatId">HeyAriel0123</p>
+                        </div>
+                        <span class="cw-action">复制</span>
+                    </div>
+                    <div class="contact-way" onclick="copyContact('电话')">
+                        <span class="cw-icon">📞</span>
+                        <div class="cw-info">
+                            <strong>电话咨询</strong>
+                            <p class="cw-value" id="phoneNum">18291883352</p>
+                        </div>
+                        <span class="cw-action">拨打</span>
+                    </div>
+                    <p class="modal-tips">工作时间：周一至周日 9:00-21:00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toast提示 -->
+        <div id="toast" class="toast"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
