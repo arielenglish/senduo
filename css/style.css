@@ -1220,7 +1220,9 @@ body {
 }
 
 /* ========== 响应式适配 PC端 ========== */
-@media (min-width: 480px) {
+
+/* 平板横屏 - 服务卡片双列 */
+@media (min-width: 640px) {
     .service-cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1232,123 +1234,366 @@ body {
     }
 }
 
-@media (min-width: 768px) {
+/* 电脑端 - 真正展开布局 */
+@media (min-width: 900px) {
     #app {
-        box-shadow: 0 0 40px rgba(0,0,0,0.06);
-    }
-
-    .hero {
-        padding: 60px 40px 48px;
-    }
-
-    .section {
-        padding: 40px;
-    }
-
-    .course-detail {
-        padding: 32px 40px;
-    }
-
-    .course-content {
-        padding: 28px 32px;
-    }
-
-    .booking-form-container {
-        padding: 32px 40px;
-    }
-
-    .booking-form {
-        padding: 32px;
-    }
-
-    .page-header {
-        padding: 48px 40px 40px;
-    }
-
-    .about-avatar svg {
-        width: 180px;
-        height: 110px;
-    }
-
-    .why-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .feature-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .price-cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 12px;
-    }
-
-    .price-card:last-child {
-        grid-column: auto;
-    }
-
-    .process-timeline {
-        padding-left: 48px;
-    }
-
-    .testimonials {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 12px;
-    }
-
-    .contact-card {
-        padding: 0 40px 32px;
-    }
-
-    .contact-item {
-        padding: 20px 24px;
-    }
-
-    .cta-card {
-        padding: 40px;
-    }
-
-    .modal-content {
-        width: 400px;
-        margin: 0 auto;
-        border-radius: var(--radius);
-    }
-}
-
-@media (min-width: 1024px) {
-    #app {
+        max-width: 1200px;
         box-shadow: 0 0 60px rgba(0,0,0,0.08);
     }
 
+    /* Hero区域横向展开 */
+    .hero {
+        padding: 60px 60px 48px;
+    }
+
     .hero-content {
-        max-width: 600px;
+        max-width: 700px;
         margin: 0 auto;
     }
 
+    .logo-svg {
+        width: 280px;
+        height: 160px;
+    }
+
+    .brand-name {
+        font-size: 40px;
+    }
+
+    .brand-en {
+        font-size: 16px;
+    }
+
+    .hero-slogan {
+        font-size: 18px;
+    }
+
+    .hero-tags {
+        gap: 12px;
+    }
+
+    .tag {
+        font-size: 14px;
+        padding: 6px 18px;
+    }
+
+    .btn-hero {
+        padding: 18px 48px;
+        font-size: 17px;
+    }
+
+    /* 通用区块 */
     .section {
         padding: 48px 60px;
     }
 
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 28px;
+    }
+
+    /* 服务卡片 - 三列横铺 */
+    .service-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .service-card:last-child {
+        grid-column: auto;
+    }
+
+    .service-card {
+        padding: 28px;
+    }
+
+    .service-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 28px;
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+    }
+
+    /* 为什么选择我们 - 四列 */
+    .why-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .why-item {
+        padding: 24px 16px;
+    }
+
+    .why-icon {
+        font-size: 32px;
+    }
+
+    .why-item h4 {
+        font-size: 15px;
+    }
+
+    .why-item p {
+        font-size: 13px;
+    }
+
+    /* CTA区域 */
+    .cta-card {
+        padding: 48px;
+    }
+
+    .cta-card h3 {
+        font-size: 24px;
+    }
+
+    /* 课程详情页 */
+    .page-header {
+        padding: 56px 60px 44px;
+    }
+
+    .page-header h1 {
+        font-size: 28px;
+    }
+
     .course-detail {
         padding: 40px 60px;
     }
 
+    .course-header h2 {
+        font-size: 24px;
+    }
+
+    .course-content {
+        padding: 32px;
+    }
+
+    .feature-item {
+        padding: 14px 0;
+    }
+
+    .feature-item strong {
+        font-size: 16px;
+    }
+
+    .feature-item p {
+        font-size: 14px;
+    }
+
+    /* 价格卡片 - 三列 */
+    .price-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .price-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 20px;
+    }
+
+    .price-card .btn-small {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .course-cta {
+        padding: 40px 60px 60px;
+    }
+
+    /* 预约表单 */
     .booking-form-container {
         padding: 40px 60px;
+        max-width: 800px;
+        margin: 0 auto;
     }
 
-    .page-header {
-        padding: 60px 60px 48px;
+    .booking-form {
+        padding: 40px;
     }
 
-    .about-content {
-        padding: 0 60px 40px;
+    .form-group label {
+        font-size: 15px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 14px 18px;
+        font-size: 16px;
+    }
+
+    .age-selector,
+    .course-selector {
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .contact-card {
         padding: 0 60px 40px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* 关于页 */
+    .about-header {
+        padding: 60px 60px 48px;
+    }
+
+    .about-avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-content {
+        padding: 0 60px 48px;
+    }
+
+    .about-section h3 {
+        font-size: 18px;
+    }
+
+    .about-section > p {
+        font-size: 15px;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+    }
+
+    .about-feature {
+        padding: 20px 16px;
+    }
+
+    .af-icon {
+        font-size: 30px;
+    }
+
+    .about-feature h4 {
+        font-size: 15px;
+    }
+
+    .about-feature p {
+        font-size: 13px;
+    }
+
+    /* 流程时间线 */
+    .process-timeline {
+        padding-left: 52px;
+    }
+
+    .step-num {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .step-content h4 {
+        font-size: 16px;
+    }
+
+    .step-content p {
+        font-size: 14px;
+    }
+
+    /* 家长反馈 */
+    .testimonials {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .testimonial {
+        padding: 20px;
+    }
+
+    .testimonial-text {
+        font-size: 15px;
+    }
+
+    /* 底部导航铺满 */
+    .bottom-nav {
+        max-width: 1200px;
+        padding: 8px 0 calc(8px + var(--safe-bottom));
+    }
+
+    .nav-item {
+        padding: 6px 40px;
+    }
+
+    .nav-icon {
+        font-size: 24px;
+    }
+
+    .nav-label {
+        font-size: 13px;
+    }
+
+    /* 悬浮按钮 */
+    .float-btn {
+        bottom: 90px;
+        right: calc(50% - 560px);
+        width: 56px;
+        height: 56px;
+        font-size: 26px;
+    }
+
+    /* 弹窗 */
+    .modal-content {
+        width: 440px;
+        border-radius: var(--radius);
+    }
+
+    /* 成功页 */
+    .success-container {
+        padding: 80px 60px;
+    }
+
+    .success-container h2 {
+        font-size: 28px;
+    }
+
+    .success-info {
+        max-width: 600px;
+    }
+}
+
+/* 超大屏 */
+@media (min-width: 1400px) {
+    #app {
+        max-width: 1320px;
+    }
+
+    .hero {
+        padding: 80px 80px 60px;
+    }
+
+    .hero-content {
+        max-width: 800px;
+    }
+
+    .section {
+        padding: 56px 80px;
+    }
+
+    .course-detail,
+    .booking-form-container,
+    .page-header,
+    .about-header,
+    .about-content,
+    .contact-card {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .float-btn {
+        right: calc(50% - 620px);
     }
 }
 
