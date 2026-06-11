@@ -1219,7 +1219,7 @@ body {
     opacity: 1;
 }
 
-/* ========== 响应式适配 ========== */
+/* ========== 响应式适配 PC端 ========== */
 @media (min-width: 480px) {
     .service-cards {
         display: grid;
@@ -1229,6 +1229,126 @@ body {
 
     .service-card:last-child {
         grid-column: 1 / -1;
+    }
+}
+
+@media (min-width: 768px) {
+    #app {
+        box-shadow: 0 0 40px rgba(0,0,0,0.06);
+    }
+
+    .hero {
+        padding: 60px 40px 48px;
+    }
+
+    .section {
+        padding: 40px;
+    }
+
+    .course-detail {
+        padding: 32px 40px;
+    }
+
+    .course-content {
+        padding: 28px 32px;
+    }
+
+    .booking-form-container {
+        padding: 32px 40px;
+    }
+
+    .booking-form {
+        padding: 32px;
+    }
+
+    .page-header {
+        padding: 48px 40px 40px;
+    }
+
+    .about-avatar svg {
+        width: 180px;
+        height: 110px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .price-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+    }
+
+    .price-card:last-child {
+        grid-column: auto;
+    }
+
+    .process-timeline {
+        padding-left: 48px;
+    }
+
+    .testimonials {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+    }
+
+    .contact-card {
+        padding: 0 40px 32px;
+    }
+
+    .contact-item {
+        padding: 20px 24px;
+    }
+
+    .cta-card {
+        padding: 40px;
+    }
+
+    .modal-content {
+        width: 400px;
+        margin: 0 auto;
+        border-radius: var(--radius);
+    }
+}
+
+@media (min-width: 1024px) {
+    #app {
+        box-shadow: 0 0 60px rgba(0,0,0,0.08);
+    }
+
+    .hero-content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .section {
+        padding: 48px 60px;
+    }
+
+    .course-detail {
+        padding: 40px 60px;
+    }
+
+    .booking-form-container {
+        padding: 40px 60px;
+    }
+
+    .page-header {
+        padding: 60px 60px 48px;
+    }
+
+    .about-content {
+        padding: 0 60px 40px;
+    }
+
+    .contact-card {
+        padding: 0 60px 40px;
     }
 }
 
